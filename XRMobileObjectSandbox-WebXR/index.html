@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XR Mobile Object Sandbox WebXR</title>
+  </head>
+  <body>
+    <canvas id="xr-canvas"></canvas>
+
+    <aside id="dashboard" class="dashboard">
+      <h1>Objeto móvil XR</h1>
+      <p data-field="connection">Conectando…</p>
+      <p data-field="position">Posición: —</p>
+      <p data-field="rotation">Rotación: —</p>
+      <p data-field="battery">Batería: —</p>
+      <p data-field="state">Estado: —</p>
+      <p data-field="vibration">Vibración: —</p>
+      <p data-field="confidence">Confianza: —</p>
+      <div class="controls">
+        <button id="ask-llm">Preguntar al companion</button>
+        <button id="cmd-stop">Stop simulado</button>
+        <button id="cmd-pulse">Pulse simulado</button>
+      </div>
+      <textarea id="llm-input" placeholder="¿Qué está pasando con el objeto?" rows="2"></textarea>
+      <pre id="llm-response"></pre>
+      <p class="hint">Tip: usa <code>?demo=1</code> para probar sin ESP32/UDP.</p>
+    </aside>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
