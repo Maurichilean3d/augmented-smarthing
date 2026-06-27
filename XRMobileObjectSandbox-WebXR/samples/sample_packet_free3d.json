@@ -1,0 +1,19 @@
+{
+  "objectId":"mobile_object_001",
+  "profileId":"hotwheels",
+  "trackingMode":"Free3D",
+  "timestampMs":12345678,
+  "ranges":[
+    {"anchorId":"A","meters":1.20,"quality":1.0},
+    {"anchorId":"B","meters":1.55,"quality":1.0},
+    {"anchorId":"C","meters":1.35,"quality":1.0},
+    {"anchorId":"D","meters":1.70,"quality":1.0}
+  ],
+  "imu":{"x":0.0,"y":0.2,"z":0.0,"w":0.98},
+  "accel":{"x":0.0,"y":0.0,"z":9.81},
+  "gyro":{"x":0.0,"y":0.0,"z":0.0},
+  "vibration":0.21,
+  "battery":87,
+  "speed":0,
+  "state":"sandbox"
+}
